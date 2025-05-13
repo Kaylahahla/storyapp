@@ -1,0 +1,33 @@
+{
+    "name": "dicoding-story-spa",
+    "version": "1.0.0",
+    "description": "SPA application using Dicoding Story API",
+    "main": "index.js",
+    "scripts": {
+        "start": "webpack serve --open",
+        "build": "webpack",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d dist"
+    },
+    "dependencies": {
+        "idb": "^8.0.3",
+        "leaflet": "^1.9.4"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.26.10",
+        "@babel/preset-env": "^7.26.9",
+        "babel-loader": "^10.0.0",
+        "copy-webpack-plugin": "^13.0.0",
+        "css-loader": "^7.1.2",
+        "gh-pages": "^6.3.0",
+        "html-webpack-plugin": "^5.6.3",
+        "style-loader": "^4.0.0",
+        "webpack": "^5.72.0",
+        "webpack-cli": "^4.9.1",
+        "webpack-dev-server": "^4.7.1"
+    },
+    "author": "Kaylah Ahla",
+    "license": "ISC",
+    "keywords": [],
+    "homepage": "https://kaylahahla.github.io/storyapp/"
+}

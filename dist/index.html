@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dicoding Story SPA</title>
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <meta name="theme-color" content="#D76C82" />
+
+<script defer src="/bundle.js"></script></head>
+<body>
+
+  <!-- Skip to Content -->
+  <a href="#main-content" class="skip-to-content">Skip to content</a>
+
+  <header>
+    <h1>Dicoding Story</h1>
+    <nav>
+      <a href="#login" id="login-link">Login</a>
+      <a href="#register" id="register-link">Daftar</a>
+      <a href="#home" id="home-link">Home</a>
+      <a href="#add-story" id="add-story-link">Tambah Cerita</a>
+      <a href="#saved">Tersimpan</a>
+
+    </nav>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <!-- Konten halaman akan dirender di sini -->
+  </main>
+
+ <script>
+  window.updateLoginRegisterVisibility = function () {
+    const token = localStorage.getItem('token');
+    const loginLink = document.getElementById('login-link');
+    const registerLink = document.getElementById('register-link');
+
+    if (token) {
+      if (loginLink) loginLink.style.display = 'none';
+      if (registerLink) registerLink.style.display = 'none';
+    } else {
+      if (loginLink) loginLink.style.display = 'inline-block';
+      if (registerLink) registerLink.style.display = 'inline-block';
+    }
+  };
+
+  document.addEventListener('DOMContentLoaded', () => {
+    window.updateLoginRegisterVisibility();
+  });
+</script>
+
+
+  <script src="bundle.js"></script>
+
+</body>
+</html>
