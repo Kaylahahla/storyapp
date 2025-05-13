@@ -2,18 +2,18 @@
   "name": "Story App",
   "short_name": "Story",
   "description": "Aplikasi untuk berbagi cerita.",
-  "start_url": "/",
+  "start_url": "/storyapp/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#4CAF50",
   "icons": [
     {
-      "src": "/icons/icon-192.png",
+      "src": "/storyapp/icons/icon-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/icons/icon-512.png",
+      "src": "/storyapp/icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
