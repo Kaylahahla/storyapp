@@ -2,20 +2,47 @@
   "name": "Story App",
   "short_name": "Story",
   "description": "Aplikasi untuk berbagi cerita.",
-  "start_url": "/storyapp/",
+  "start_url": ".",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#4CAF50",
   "icons": [
     {
-      "src": "/storyapp/icons/icon-192.png",
+      "src": "icons/icon-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/storyapp/icons/icon-512.png",
+      "src": "icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Tambah Cerita Baru",
+      "short_name": "Tambah Cerita",
+      "description": "Buka halaman tambah data baru",
+      "url": "#add-story",
+      "icons": [{
+        "src": "icons/icon-192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshots/screenshot-desktop.png",
+      "sizes": "1280x800",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "screenshots/screenshot-mobile.png",
+      "sizes": "375x667",
+      "type": "image/png",
+      "form_factor": "narrow"
     }
   ]
 }
